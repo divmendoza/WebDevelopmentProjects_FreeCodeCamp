@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+</head>
+<body>
+    <h1 id="title">Web Development Skills Survey Form to Mr. Mendoza</h1>
+    <p id = "description">This form is intended to measure Mr. Mendoza's web development skills.</p>
+    <form id = "survey-form">
+        <fieldset>
+            <legend>Personal Information</legend>
+            <label for = "name" id = "name-label">Name</label>
+            <input type = "text" id = "name" placeholder = "Ex. John Doe" required><br><br>
+            <label for = "email" id = "email-label">Email</label>
+            <input type = "email" id = "email" placeholder = "Ex. fake@gmail.com" required><br><br>
+            <label for = "number" id = "number-label">Number</label>
+            <input type = "number" id = "number" placeholder = "09XXXXXXXXX" min = "11" max = "11">
+        </fieldset><br>
+        <fieldset>
+            <label for = "dropdown">What skills do you have right now?</label>
+            <select id = "dropdown">
+                <option selected value = "HTMLCSSJavaScript">HTML, CSS, and JavaScript</option>
+                <option value = "html">HTML</option>
+                <option value = "css">CSS</option>
+                <option value = "javascript">JavaScript</option>
+            </select>
+        </fieldset><br>
+        <fieldset>
+            <legend>What skills are you learning right now?</legend>
+            <label for = "learning">Mastering My Knowledge</label>
+            <input type = "radio" id = "learning" name = "assessment" value = "master">
+            <label for = "learning">JavaScript</label>
+            <input type = "radio" id = "learning" name = "assessment" value = "javascript">
+            <label for = "learning">React</label>
+            <input type = "radio" id = "learning" name = "assessment" value = "react">
+        </fieldset><br>
+        <fieldset>
+            <legend>Which Skill/s are you confident right now?</legend>
+            <label for = "mastered">HTML</label>
+            <input type = "checkbox" id = "mastered" name = "mastered" value = "html">
+            <label for = "mastered">CSS</label>
+            <input type = "checkbox" id = "mastered" name = "mastered" value = "css">
+            <label for = "learning">JavaScript</label>
+            <input type = "checkbox" id = "mastered" name = "mastered" value = "javascript">
+        </fieldset><br>
+        <fieldset>
+            <legend>Any Comments?</legend><br>
+            <textarea id = "text" rows = "4" cols = "38" placeholder = "Enter your comment"></textarea>
+        </fieldset><br>
+        <button type = "submit" id = "submit">Submit</button>
+    </form>   
+</body>
+</html>
