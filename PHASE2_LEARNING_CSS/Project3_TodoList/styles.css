@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: lightgreen;
+  padding: 20px;
+  font-family: arial;
+  font-size: 20px;
+  line-height: 2;
+}
+a {
+  text-decoration: none;
+}
+a:link{
+  color: white;
+}
+a:visited{
+  color: darkgreen;
+}
+a:hover{
+  color: yellow;
+}
+a:focus{
+  outline: orange;  
+}
+a:active{
+  color: lightblue;
+}
+.todo-list{
+  width: 100%;
+  max-width: 550px;
+  margin: 0px auto;
+  background-color: rgb(102, 158, 102);
+  border-radius: 10px;
+  padding: 20px;
+}
+.todo-list li{
+list-style-type: none;
+width: inherit;
+margin-bottom: 100px;
+border-radius: 30px;
+}
